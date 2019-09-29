@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="empdata" prefHeight="510.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fms.employees.EmployeesController">
+   <children>
+      <Label layoutX="206.0" layoutY="14.0" text="Employees Working In Shop">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="emptable" layoutX="4.0" layoutY="57.0" prefHeight="360.0" prefWidth="670.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="85.0" text="Emp-Code" />
+          <TableColumn fx:id="col_name" prefWidth="126.0" text="Name" />
+            <TableColumn fx:id="col_address" prefWidth="92.0" text="Address" />
+            <TableColumn fx:id="col_mono" prefWidth="132.0" text="Mobile Number" />
+            <TableColumn fx:id="col_mail" prefWidth="136.0" text="E-mail ID" />
+            <TableColumn fx:id="col_salary" minWidth="8.0" prefWidth="98.0" text="Salary" />
+        </columns>
+      </TableView>
+      <Pane layoutX="214.0" layoutY="429.0" prefHeight="66.0" prefWidth="250.0">
+         <children>
+            <HBox alignment="CENTER" focusTraversable="true" layoutY="13.0" prefHeight="41.0" prefWidth="250.0" spacing="5.0">
+               <children>
+                  <JFXButton buttonType="RAISED" onAction="#addemp" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: skyblue;" text="Add" />
+                  <JFXButton buttonType="RAISED" onAction="#updateemp" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: skyblue;" text="Update" />
+                  <JFXButton buttonType="RAISED" onAction="#rememp" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: skyblue;" text="Remove" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootpane" centerShape="false" focusTraversable="true" prefHeight="596.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fms.LoginController">
+   <children>
+      <ImageView fitHeight="596.0" fitWidth="751.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/the_great_race-1600x1200.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="263.0" layoutY="32.0" text="Mobile Shoppe" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.15384615384615385" endY="0.6826923076923077" startX="0.15384615384615385" startY="0.47115384615384615">
+               <stops>
+                  <Stop color="#f0d302" />
+                  <Stop color="#f0f8c9" offset="0.8666666666666667" />
+                  <Stop color="#f0f8c9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="loginlabel" alignment="CENTER" contentDisplay="CENTER" layoutX="233.0" layoutY="110.0" text="Login Using Your User ID &amp; Password" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="233.0" AnchorPane.rightAnchor="207.0">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="id" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="338.0" layoutY="176.0" onAction="#loadHome" prefHeight="44.0" prefWidth="190.0" promptText="Enter Your ID" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="pass" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="342.0" layoutY="298.0" onAction="#loadHome" prefHeight="44.0" prefWidth="183.0" promptText="Enter Your Password" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></JFXPasswordField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="225.0" layoutY="189.0" text="User ID :" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="215.0" layoutY="311.0" text="Password :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" focusTraversable="false" layoutX="178.0" layoutY="419.0" mnemonicParsing="false" onAction="#loadHome" prefHeight="37.0" prefWidth="74.0" style="-fx-background-color: purple;" text="Login" textAlignment="CENTER" textFill="WHITE" />
+      <JFXButton fx:id="reset" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" focusTraversable="false" layoutX="351.0" layoutY="419.0" mnemonicParsing="false" onAction="#resetcontent" prefHeight="37.0" prefWidth="74.0" style="-fx-background-color: purple;" text="Reset" textAlignment="CENTER" textFill="WHITE" />
+      <JFXButton fx:id="exit" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" focusTraversable="false" layoutX="522.0" layoutY="419.0" mnemonicParsing="false" onAction="#exitapp" prefHeight="37.0" prefWidth="74.0" style="-fx-background-color: purple;" text="Exit" textAlignment="CENTER" textFill="WHITE" /> 
+      <ImageView fitHeight="37.0" fitWidth="241.0" layoutX="506.0" layoutY="555.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/social.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dblabel" layoutX="14.0" layoutY="551.0" prefHeight="31.0" prefWidth="290.0" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="561.0" layoutY="535.0" text="Connect With Us On" textFill="WHITE" />
+      <Hyperlink layoutX="301.0" layoutY="373.0" onAction="#loadRegisteration" text="Register New Account" textFill="#2900ff" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="329.0" layoutY="484.0" onAction="#help" text="Help Guide" textFill="#e11616">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

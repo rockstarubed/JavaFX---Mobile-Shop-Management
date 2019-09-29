@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fms.Products.TypeController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="628.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/TABSHEADER.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="smarphone" layoutY="70.0" prefHeight="315.0" prefWidth="628.0">
+        <columns>
+          <TableColumn fx:id="pcode" prefWidth="115.0" text="Product Code" />
+          <TableColumn fx:id="manufacturer" prefWidth="135.0" text="Manufacturer" />
+            <TableColumn fx:id="model" prefWidth="119.0" text="Model" />
+            <TableColumn fx:id="colour" prefWidth="127.0" text="Colour" />
+            <TableColumn fx:id="price" prefWidth="127.0" text="Price" />
+        </columns>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </TableView>
+      <Pane layoutX="199.0" layoutY="380.0" prefHeight="66.0" prefWidth="250.0">
+         <children>
+            <HBox alignment="CENTER" focusTraversable="true" layoutY="13.0" prefHeight="41.0" prefWidth="250.0" spacing="5.0">
+               <children>
+                  <JFXButton buttonType="RAISED" onAction="#addp" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: skyblue;" text="Add" />
+                  <JFXButton buttonType="RAISED" onAction="#updatep" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: skyblue;" text="Update" />
+                  <JFXButton buttonType="RAISED" onAction="#deletep" prefHeight="60.0" prefWidth="86.0" style="-fx-background-color: skyblue;" text="Remove" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fms.HomeController">
+   <children>
+      <ImageView fitHeight="61.0" fitWidth="751.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/header.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="234.0" layoutY="13.0" text="MOBILE SHOPPE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="61.0" fitWidth="751.0" layoutY="535.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/header.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="475.0" fitWidth="112.0" layoutX="-1.0" layoutY="61.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/panel.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="7.0" layoutY="108.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #979ffe;" text="Home" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="8.0" layoutY="191.0" mnemonicParsing="false" onAction="#showhelp" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #979ffe;" text="Help " textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="7.0" layoutY="279.0" mnemonicParsing="false" onAction="#showabout" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #979ffe;" text="About" textFill="WHITE" />
+      <JFXButton fx:id="exhome" buttonType="RAISED" layoutX="8.0" layoutY="447.0" mnemonicParsing="false" onAction="#exit" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #979ffe;" text="Exit" textFill="WHITE" />
+      <JFXButton fx:id="logout" buttonType="RAISED" layoutX="7.0" layoutY="362.0" mnemonicParsing="false" onAction="#openmain" prefHeight="39.0" prefWidth="96.0" style="-fx-background-color: #979ffe;" text="Logout" textFill="WHITE" />
+      <Line endX="-8.0" endY="452.0" layoutX="434.0" layoutY="82.0" startX="-8.0" />
+      <Line endX="534.0" layoutX="219.0" layoutY="309.0" startX="-107.0" />
+      <Label layoutX="119.0" layoutY="554.0" text="Copyright (c) 2018, Friends MicroSoftwares" textFill="#f2ecec">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="173.0" fitWidth="200.0" layoutX="153.0" layoutY="108.0" onMouseClicked="#loadproduct" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/stocks.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="employeemanager" fitHeight="150.0" fitWidth="200.0" layoutX="512.0" layoutY="108.0" onMouseClicked="#loademployees" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/employee.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="billgenerator" fitHeight="150.0" fitWidth="200.0" layoutX="178.0" layoutY="336.0" onMouseClicked="#loadbill" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/billgenrator.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="help" fitHeight="150.0" fitWidth="200.0" layoutX="512.0" layoutY="336.0" onMouseClicked="#showhelp1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/report.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcome" layoutX="372.0" layoutY="41.0" textFill="WHITE" />
+      <Label layoutX="190.0" layoutY="279.0" text="Stock Management" />
+      <Label layoutX="510.0" layoutY="279.0" text="Employee Management" />
+      <Label layoutX="208.0" layoutY="493.0" text="Bill Generator" />
+      <Label layoutX="550.0" layoutY="493.0" text="Bill Reports" />
+   </children>
+</Pane>

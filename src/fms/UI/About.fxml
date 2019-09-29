@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="266.0" layoutY="14.0" text="About">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="40.0" layoutY="56.0" prefHeight="217.0" prefWidth="520.0" text="Product Version:&#10;Mobile Shoppe  1.0&#10;&#10;Build Information:&#10;Version 1.0.0&#10;Date: 2018-08-05&#10;Java Version: 1.8.0_171-b11, Oracle Corporation&#10;&#10;Languages Used:&#10;Java, SQL, FXML, XML&#10;&#10;Java:&#10;1.8.0_171-b11, Oracle Corporation&#10;JavaFX 8&#10;JDBC (For Sqlite Database)&#10;&#10;Database Used:&#10;Type, Embeded&#10;Engine, Sqlite Verion 3.25.2 Stable&#10;&#10;Externel Libraries:&#10;JFoeniX.jar (JavaFX Material Design Library)&#10;Sqlite-jdbc.jar (Sqlite JDBC Driver)&#10;&#10;Operating System/s:&#10;Linux Mint 19 (amd 64, 4.15.20)&#10;Debian Stretch (Linux, amd64, 4.9.0-8)&#10;MS Windows 7 Ultimate 64 Bit&#10;&#10;Copyright (c) 2018 - 2019, Friends MicroSoftwares." />
+      <Label layoutX="256.0" layoutY="299.0" text="Contact">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="324.0" text="Mobile:-" />
+      <Label layoutX="300.0" layoutY="324.0" text="+917385330755" />
+      <Label layoutX="204.0" layoutY="340.0" text="E-mail" />
+      <Label layoutX="300.0" layoutY="340.0" text="skubed@rediffmail.com" />
+      <Label layoutX="223.0" layoutY="367.0" text="Developed By">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="400.0" text="1 .Ubed Shaikh    2. Kanchan Jogi    3. Shubhangi Kamale" />
+   </children>
+</AnchorPane>

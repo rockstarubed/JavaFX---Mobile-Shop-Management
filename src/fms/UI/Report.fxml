@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="610.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="fms.ReportController">
+   <children>
+      <Label layoutX="216.0" layoutY="14.0" text="Sold Products Report">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="report_table" layoutX="6.0" layoutY="52.0" prefHeight="297.0" prefWidth="598.0">
+        <columns>
+          <TableColumn fx:id="c_bill" prefWidth="53.0" text="Bill" />
+          <TableColumn fx:id="c_soldto" prefWidth="142.0" text="Sold To" />
+            <TableColumn fx:id="c_mono" prefWidth="127.0" text="Mobile Number" />
+            <TableColumn fx:id="c_soldon" prefWidth="97.0" text="Sold On" />
+            <TableColumn fx:id="c_soldby" prefWidth="97.0" text="Sold By" />
+            <TableColumn fx:id="c_pid" prefWidth="77.0" text="PID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

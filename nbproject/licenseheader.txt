@@ -1,0 +1,6 @@
+/*
+$This Project is Licenced to Ubed Shaikh, Kanchan Jogi, Shubhangi Kamale.
+$Source code is not editable without permission of anyone mentioned above.
+$Project under Development.
+$Copyright to Friends Microsoftwares 2018.
+*/
